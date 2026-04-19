@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Shubham Portfolio</title>
 
-<link rel="stylesheet" href="./style.css">
-<script src="./script.js"></script>
-
-  <!-- AOS (you had animations before) -->
+  <link rel="stylesheet" href="./style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- LOADER (FIXED) -->
+<!-- BACKGROUND GLOW ORBS -->
+<div class="bg-orb orb1"></div>
+<div class="bg-orb orb2"></div>
+<div class="bg-orb orb3"></div>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+
+<!-- LOADER -->
 <div id="loader">
   <div class="spinner"></div>
 </div>
 
-<!-- MAIN CONTENT -->
 <div id="main-content" style="display:none;">
 
-  <!-- NAV -->
   <header>
     <h2>Shubham Patel</h2>
     <nav>
@@ -33,60 +36,63 @@
     </nav>
   </header>
 
-  <!-- HOME -->
-  <section id="home" data-aos="fade-up">
+  <!-- HERO -->
+  <section id="home" class="hero">
+
     <h1>Hi, I'm Shubham 👋</h1>
-    <p>Frontend Developer | MERN Stack Learner</p>
+
+    <h2 class="typing">
+      <span id="type"></span>
+    </h2>
+
+    <p>Building clean, scalable & modern web applications</p>
+
+    <div class="hero-btns">
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn outline" href="./resume.pdf" target="_blank">Resume</a>
+    </div>
+
   </section>
-  <section id="about" data-aos="fade-up">
-  <h2>About Me</h2>
-  <p>
-Passionate Full Stack Web Developer skilled in building responsive and user-friendly web 
-applications. Strong foundation in JavaScript, Node.js, and database management. Focused on 
-creating real-world projects and continuously improving development skills
-  </p>
-</section>
+
+  <!-- ABOUT -->
+  <section data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I am a Full Stack Developer who enjoys building real-world applications.
+      I focus on writing clean code, building responsive UI, and learning modern technologies through projects.
+    </p>
+  </section>
 
   <!-- SKILLS -->
   <section id="skills">
     <h2 data-aos="fade-right">Skills</h2>
 
     <div class="skills-container">
-      <div class="skill" data-aos="zoom-in">HTML</div>
-      <div class="skill" data-aos="zoom-in">CSS</div>
-      <div class="skill" data-aos="zoom-in">JavaScript</div>
-      <div class="skill" data-aos="zoom-in">React</div>
-      <div class="skill" data-aos="zoom-in">Node.js</div>
-      <div class="skill" data-aos="zoom-in">MongoDB</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">MongoDB</div>
     </div>
   </section>
 
-  <!-- PROJECTS (GitHub Auto Fetch FIXED) -->
+  <!-- PROJECTS -->
   <section id="projects">
     <h2 data-aos="fade-right">Projects</h2>
     <div id="project-container"></div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" data-aos="fade-up">
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: patelshubham2806@gmail.com</p>
-    <p>GitHub: https://github.com/shubhampatel2803</p>
+    <p>GitHub: github.com/shubhampatel2803</p>
   </section>
 
 </div>
 
-<section id="resume" data-aos="fade-up">
-  <h2>Resume</h2>
-
-  <a href="./resume.pdf" target="_blank">
-    <button>View Resume</button>
-  </a>
-</section>
-
-<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script src="script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
